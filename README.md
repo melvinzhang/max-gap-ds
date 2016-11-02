@@ -16,4 +16,8 @@ However, if an internal point, p[k] (1 < k < n) is deleted, then we the new-gap 
 is given by g'[k-1] = (p[k+1] - p[k-1]) = g[k-1] + g[k].
 
 This will be equivalent to replace the old gaps {g[k-1], g[k]} by
-a new gaps g'[k-1] = g[k-1]+g[k]. 
+a new gaps g'[k-1] = g[k-1]+g[k].
+
+# Refrences
+
+Talk given at Friday Hacks and RAS Group research seminar: http://www.slideshare.net/melvinzhang/quest-for-the-optimal-algorithm
