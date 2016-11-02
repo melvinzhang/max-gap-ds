@@ -18,6 +18,18 @@ is given by g'[k-1] = (p[k+1] - p[k-1]) = g[k-1] + g[k].
 This will be equivalent to replace the old gaps {g[k-1], g[k]} by
 a new gaps g'[k-1] = g[k-1]+g[k].
 
+# Time complexity
+
+We are interested in the time complexity of deleting n elements and reporting the maximum after each delete.
+
+Using a max heap to represent the gaps, this can be done in O(n lg n) time.
+
+[Wang and Lin](http://ieeexplore.ieee.org/document/5654505/) designed a data structure that solves this in O(n lg lg n) time.
+
+[Wang, Lin, and Yang](http://ieeexplore.ieee.org/document/6674301/) designed a data structure that solves this in O(n α(n)) time, where α(n) is the inverse Ackermann function.
+
+Open problem: Can n deletes be done in O(n) time?
+
 # Refrences
 
 Talk given at Friday Hacks and RAS Group research seminar: http://www.slideshare.net/melvinzhang/quest-for-the-optimal-algorithm
