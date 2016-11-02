@@ -18,7 +18,7 @@ is given by g'[k-1] = (p[k+1] - p[k-1]) = g[k-1] + g[k].
 This will be equivalent to replace the old gaps {g[k-1], g[k]} by
 a new gaps g'[k-1] = g[k-1]+g[k].
 
-# Time complexity
+# Time complexity for n deletes
 
 We are interested in the time complexity of deleting n elements and reporting the maximum after each delete.
 
@@ -29,6 +29,26 @@ Using a max heap to represent the gaps, this can be done in O(n lg n) time.
 [Wang, Lin, and Yang](http://ieeexplore.ieee.org/document/6674301/) designed a data structure that solves this in O(n α(n)) time, where α(n) is the inverse Ackermann function.
 
 Open problem: Can n deletes be done in O(n) time?
+
+# Solving special cases in O(n) time
+
+As we are unable to solve the full problem in O(n) time, we consider a number of special cases.
+
+## Special case of deleting only in the middle
+
+Observation: gaps can only increase.
+
+Store a single value of max, update it when it increases. This can be done in O(n) time.
+
+## Special case of deleting only from the left.
+
+Observation: no new gaps are formed.
+
+Pre-compute an array M for max { p[i], ..., p[n] }. Max after deletion of p[i] is M[i+1].
+
+## Special case of deleting only at the ends.
+
+Can be done in O(n) time. Details to be provided later.
 
 # Refrences
 
