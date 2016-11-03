@@ -22,7 +22,7 @@ a new gaps g'[k-1] = g[k-1]+g[k].
 
 We are interested in the time complexity of deleting n elements and reporting the maximum after each delete.
 
-[Zhang and Leong](http://online.liebertpub.com/doi/abs/10.1089/cmb.2009.0093) proposed using a max heap to represent the gaps. This gives a time tcomplexity of O(n lg n) time.
+[Zhang and Leong](http://online.liebertpub.com/doi/abs/10.1089/cmb.2009.0093) proposed using a max heap to store the gap lengths. This gives a time complexity of O(n lg n) time.
 
 [Wang and Lin](http://ieeexplore.ieee.org/document/5654505/) designed a data structure that solves this in O(n lg lg n) time.
 
