@@ -48,7 +48,12 @@ Pre-compute an array M for max { p[i], ..., p[n] }. Max after deletion of p[i] i
 
 ## Special case of deleting only at the ends.
 
-Can be done in O(n) time. Details to be provided later.
+One solution is to use the RMQ data structure of [Bender and
+Farach-Colton](https://www3.cs.stonybrook.edu/~bender/newpub/BenderFa00-lca.pdf),
+which takes O(n) to preprocess the gaps and O(1) to return the max gap for any
+interval.
+
+There is a simpler solution using only stacks and lists, whose implementation is found in [here](src/MaxGapNSV.java). Description of the algorithm is forthcoming.
 
 # Refrences
 
