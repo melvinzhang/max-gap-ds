@@ -53,8 +53,15 @@ Farach-Colton](https://www3.cs.stonybrook.edu/~bender/newpub/BenderFa00-lca.pdf)
 which takes O(n) to preprocess the gaps and O(1) to return the max gap for any
 interval.
 
-There is a simpler solution using only stacks and lists, whose implementation is found in [here](src/MaxGapNSV.java). Description of the algorithm is forthcoming.
+Another solution suggested by Shunhao Oh via email is to build the cartesian
+tree of the gaps in linear time. When deleting the leftmost/rightmost gap, link
+its only child to its parent to maintain the cartesian tree property.
+
+There is a simpler solution using only stacks and lists, whose implementation
+is found in [here](src/MaxGapNSV.java). Description of the algorithm is
+forthcoming.
 
 # Refrences
 
-Talk given at Friday Hacks and RAS Group research seminar: http://www.slideshare.net/melvinzhang/quest-for-the-optimal-algorithm
+Slides for talk given at Friday Hacks and RAS Group research seminar:
+http://www.slideshare.net/melvinzhang/quest-for-the-optimal-algorithm
